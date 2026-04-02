@@ -1,23 +1,30 @@
 import React from "react";
 
 const Hero = ({ isMobile }) => {
-
   return (
-    <div className="z-20 w-full h-screen relative">
-      <img
-        src={isMobile ? "./home-images/mobileBg.jpg" : "./home-images/bg-4.jpg"}
-        className="size-full absolute top-0 right-0 object-cover z-1"
-        alt=""
-      />
-      <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-r from-black to-black/40  opacity-70 z-2"></div>
-      <div className="w-full h-screen relative z-3 py-30 pt-60 lg:pt-40 px-10 lg:px-52 ">
-        <h1 className="text-[8vw] lg:text-[4vw] leading-[100%] lg:leading-[90%] font-heading font-bold text-white">
-          Don’t <br/> Just Train. <br/> Train Together.
+    <section className="w-full h-screen relative z-1 px-40 py-20 bg-[#FBF5F1]">
+      <div className="w-full h-full relative z-2 mt-15">
+        <h1 className="font-heading text-[42px] capitalize font-medium leading-[105%] text-[#333]">
+          Share & discover <br /> workout routines
         </h1>
-        <p className="w-full pr-10 lg:w-120 text-[#b5b5b5] lg:text-white pt-10 font-body text-[3.5vw] lg:text-lg ">Build custom routines, track your progress, and share your wins with a community that keeps you moving.</p>
-        <button className="bg-linear-to-r from-green-400/90 to-green-500/80 text-white px-6 py-3 hover:bg-green-600 btn mt-50 ">Get Started</button>
+        <p className="font-body text-[#444]/80 tracking-wider w-100 text-lg mt-5 mb-10">
+          Create, share, and follow personalized workout routines. Get inspired
+          and stay fit together.
+        </p>
+        <div className="mt-30">
+          <button className="px-6 py-3 text-white bg-[#fd5a48]  rounded-lg font-medium hover:bg-[#fd5a48]/90 transition font-body cursor-pointer">
+            Get Started
+          </button>
+          <button className="px-6 py-3 bg-[#333] text-white rounded-lg font-medium hover:bg-[#555] transition ml-5 cursor-pointer font-body ">
+            Explore Workouts
+          </button>
+        </div>
+        <div>
+          <div className="w-80 h-25 mt-5 rounded-t-4xl rounded-br-4xl bg-[#E4D3CA] absolute top-0 -translate-y-[60%] right-0"></div>
+          <div className="w-80 h-110 rounded-b-[64px] rounded-tr-xl bg-[#E4D3CA] absolute right-0 top-35 -translate-y-[11%]"></div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
