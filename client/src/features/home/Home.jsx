@@ -33,7 +33,7 @@ const Home = () => {
                 <div></div>
                 <div></div>
             </div> */}
-            {/* <Navbar isMobile={isMobile} /> */}
+            <Navbar isMobile={isMobile} />
             <Hero isMobile={isMobile} />
             {/* <HowItWorks />
             <FeaturedWorkout isMobile={isMobile} />
