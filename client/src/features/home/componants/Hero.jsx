@@ -1,29 +1,61 @@
 import React from "react";
 
-const Hero = ({ isMobile }) => {
+const Hero = () => {
   return (
-    <section className="w-full h-screen relative z-1 px-40 py-20 bg-[#FBF5F1]">
-      <div className="w-full h-full relative z-2 mt-15">
-        <h1 className="font-heading text-[42px] capitalize font-medium leading-[105%] text-[#333]">
-          Share & discover <br /> workout routines
-        </h1>
-        <p className="font-body text-[#444]/80 tracking-wider w-100 text-lg mt-5 mb-10">
-          Create, share, and follow personalized workout routines. Get inspired
-          and stay fit together.
-        </p>
-        <div className="mt-30">
-          <button className="px-6 py-3 text-white bg-[#fd5a48]  rounded-lg font-medium hover:bg-[#fd5a48]/90 transition font-body cursor-pointer">
-            Get Started
-          </button>
-          <button className="px-6 py-3 bg-[#333] text-white rounded-lg font-medium hover:bg-[#555] transition ml-5 cursor-pointer font-body ">
-            Explore Workouts
-          </button>
+    <section className="w-full h-screen relative z-1 px-40 py-20 bg-[#FBF5F1] overflow-hidden">
+      <div className="w-full h-full relative z-4 mt-15 flex gap-5">
+        <div className="w-1/2 h-full relative z-1">
+          <h1 className="font-heading text-[42px] capitalize font-bold leading-[105%] text-[#1a1a1a] mt-10">
+            Share & discover <br /> workout routines
+          </h1>
+          <p className="font-body text-[#444]/80 tracking-wider w-100 text-lg mt-5 mb-10">
+            Create, share, and follow personalized workout routines. Get
+            inspired and stay fit together.
+          </p>
+          <div className="mt-30">
+            <button className="px-6 py-3 text-white bg-[#fd5a48]  rounded-lg font-medium hover:bg-[#fd5a48]/90 transition font-body cursor-pointer">
+              Get Started
+            </button>
+            <button className="px-6 py-3 bg-[#333] text-white rounded-lg font-medium hover:bg-[#555] transition ml-5 cursor-pointer font-body ">
+              Explore Workouts
+            </button>
+          </div>
         </div>
-        <div>
-          <div className="w-80 h-25 mt-5 rounded-t-4xl rounded-br-4xl bg-[#E4D3CA] absolute top-0 -translate-y-[60%] right-0"></div>
-          <div className="w-80 h-110 rounded-b-[64px] rounded-tr-xl bg-[#E4D3CA] absolute right-0 top-35 -translate-y-[11%]"></div>
+        <div className="w-1/2 h-full relative z-1 flex gap-5">
+          <div className="relative overflow-visible pt-10">
+            <div className="w-50 h-20 bg-[#F0E2DB] rounded-t-xl float-right  relative">
+              <img src="./home-page/illustrations/yoga.svg" className="size-20 absolute top-0 right-0 -translate-y-full" alt="" />
+            </div>
+            <div className="w-70 rounded-4xl h-100 bg-[#F0E2DB] rounded-br-xl mb-5 float-right rounded-tr-none overflow-hidden relative">
+              <div className="size-60 rounded-full bg-[#f89d6f]/30 absolute bottom-0 right-0 translate-x-2/10 translate-y-1/2"></div>
+              <div className="size-10 rounded-full bg-[#f89d6f]/30 absolute top-10 left-0 translate-x-3/10 translate-y-1/2"></div>
+              <div className="size-30 rounded-full bg-[#f89d6f]/20 absolute top-0 right-0 translate-x-3/10 translate-y-1/2"></div>
+            </div>
+          </div>
+          <div className="relative overflow-visible float-right">
+            <div className="w-[320px] rounded-t-4xl h-30 bg-[#F0E2DB] rounded-br-xl mb-5 relative overflow-hidden"> 
+              <img src="./home-page/illustrations/bike.svg" className="size-20 absolute bottom-0 -translate-x-2 translate-y-2 right-0 opacity-60" alt="" />
+              <div className="size-30 rounded-full bg-[#f89d6f]/10 absolute top-0 left-0 -translate-x-3/10 translate-y-1/2"></div>
+            </div>
+            <div className="w-72 h-110 bg-[#F0E2DB] rounded-b-[78px] rounded-tr-xl overflow-hidden relative">
+              <div className="size-30 rounded-full bg-[#f89d6f]/10 absolute top-0 left-0 -translate-x-3/10 -translate-y-7/10"></div>
+              <div className="size-30 rounded-full bg-[#f89d6f]/10 absolute bottom-0 left-0 -translate-x-3/10 -translate-y-0/10"></div>
+            </div>
+          </div>
+          <img
+            src="./home-page/hero/hero2.png"
+            alt=""
+            className="w-[380px] h-150 object-fill absolute top-0 right-0 translate-x-[19%] -translate-y-[4%] z-10"
+          />
+          <img
+            src="./home-page/hero/hero1.png"
+            alt=""
+            className="w-auto h-140 absolute top-0 left-0 -translate-x-[8%] -translate-y-[7.5%] z-10 object-contain"
+          />
         </div>
       </div>
+      <img src="./home-page/illustrations/athletes.svg" className="absolute z-1 bottom-0 left-0 translate-y-[25%] size-100" alt="" />
+      <img src="./home-page/illustrations/activity.svg" className="absolute z-1 bottom-0 right-0 translate-y-[25%] size-50" alt="" />
     </section>
   );
 };
