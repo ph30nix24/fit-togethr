@@ -53,7 +53,7 @@ const Hero = () => {
           <img
             src="./home-page/hero/hero2.png"
             alt=""
-            className="w-[380px] h-150 object-fill absolute top-0 right-0 translate-x-[19%] -translate-y-[4%] z-10"
+            className="w-[380px] h-150 object-fill absolute top-0 right-0 translate-x-[22%] -translate-y-[4%] z-10"
           />
           <img
             src="./home-page/hero/hero1.png"

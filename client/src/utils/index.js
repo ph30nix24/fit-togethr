@@ -1,23 +1,23 @@
 export const howItWorksData = [
   {
-    img: "./home-images/howItWorks/workout.png",
+    img: "./home-page/how-it-works/workoutPlan.png",
     heading: "create your workout plan",
-    desc: "Build custom routines tailored to your goals",
+    desc: "Choose from ready-made plans or build your own based on your goals, fitness level, and schedule.",
   },
   {
-    img: "./home-images/howItWorks/progress.png",
+    img: "./home-page/how-it-works/progress.png",
     heading: "track your progress",
-    desc: "Log workouts, monitor your improvements",
+    desc: "Log your workouts, monitor your stats, and celebrate every milestone along your fitness journey.",
   },
   {
-    img: "./home-images/howItWorks/community.png",
-    heading: "join in the community",
-    desc: "Share your journey and get motivated"
+    img: "./home-page/how-it-works/community.png",
+    heading: "join the community",
+    desc: "Share your journey, get support, and stay motivated with people who inspire you to keep going."
   },
   {
-    img: "./home-images/howItWorks/consistent.png",
+    img: "./home-page/how-it-works/calender.png",
     heading: "stay consistent",
-    desc: "Stay on track with reminders and streaks"
+    desc: "Build lasting habits with reminders, streaks, and goals that keep you moving forward."
   }
 ];
 
