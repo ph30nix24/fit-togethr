@@ -7,6 +7,8 @@
 @theme {
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'SN Pro', sans-serif;
+    --color-primary: #fd5a48;
+     --color-secondary: #ff8e6e;
 }
 
 main {
