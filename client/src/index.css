@@ -34,6 +34,9 @@ main {
         @apply hover:text-green-500 hover:border-b-2 hover:border-green-500
     }
     .how-it-works-top {
-        @apply text-xs uppercase text-[#333] font-body tracking-widest font-semibold
+        @apply text-[2.5vw] lg:text-xs uppercase text-[#333] font-body tracking-widest font-semibold
+    }
+    .profileIconCls {
+        @apply size-10 rounded-full object-scale-down border-2 border-white
     }
 }
