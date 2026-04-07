@@ -36,8 +36,9 @@ const Home = () => {
             <Navbar isMobile={isMobile} />
             <Hero isMobile={isMobile} />
             <HowItWorks />
-            {/* <FeaturedWorkout isMobile={isMobile} />
-            <Community isMobile={isMobile} /> */}
+            <FeaturedWorkout isMobile={isMobile} />
+            <Community isMobile={isMobile} />
+            
         </main>
     </>
   )

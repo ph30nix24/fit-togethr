@@ -39,4 +39,7 @@ main {
     .profileIconCls {
         @apply size-10 rounded-full object-scale-down border-2 border-white
     }
+    .communityTags {
+        @apply w-fit text-sm font-body text-center text-gray-500 px-2 py-1
+    }
 }

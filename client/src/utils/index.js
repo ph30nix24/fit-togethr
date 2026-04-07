@@ -12,189 +12,213 @@ export const howItWorksData = [
   {
     img: "./home-page/how-it-works/community.png",
     heading: "join the community",
-    desc: "Share your journey, get support, and stay motivated with people who inspire you to keep going."
+    desc: "Share your journey, get support, and stay motivated with people who inspire you to keep going.",
   },
   {
     img: "./home-page/how-it-works/calender.png",
     heading: "stay consistent",
-    desc: "Build lasting habits with reminders, streaks, and goals that keep you moving forward."
-  }
+    desc: "Build lasting habits with reminders, streaks, and goals that keep you moving forward.",
+  },
 ];
-
 
 export const workouts = [
   {
-    "id": 1,
-    "img": "./home-images/features/workout-1.png",
-    "title": "Beginner Workout",
-    "level": "Beginner",
-    "duration_weeks": 4,
-    "equipment": "Minimal",
-    "goal": "Build foundation",
-    "sessions_per_week": 3,
-    "category": "Full Body",
-    "calories_per_session": 250,
-    "tags": [
-      "bodyweight",
-      "beginner-friendly"
-    ],
-    "featured": false
+    id: 1,
+    img: "./home-page/featured/beginner-workout.png",
+    title: "Beginner Workout",
+    tag: "Perfect for New Starters",
+    workouts_per_week: 3,
+    minutes_per_day: "20-30",
+    focus: "Full Body Focus",
   },
   {
-    "id": 2,
-    "title": "Fat Loss Plan",
-    "img": "./home-images/features/workout-2.png",
-    "level": "Intermediate",
-    "duration_weeks": 8,
-    "equipment": "Dumbbells",
-    "goal": "Burn fat",
-    "sessions_per_week": 5,
-    "category": "Cardio + Strength",
-    "calories_per_session": 480,
-    "tags": [
-      "hiit",
-      "fat-burn"
-    ],
-    "featured": true
+    id: 2,
+    img: "./home-page/featured/fat-loss.png",
+    title: "Fat Loss Plan",
+    tag: "Burn Fat & Get Lean",
+    workouts_per_week: 4,
+    minutes_per_day: "30-45",
+    focus: "Cardio + Strength",
   },
   {
-    "id": 3,
-    "title": "Muscle Gain Plan",
-    "img": "./home-images/features/workout-3.png",
-    "level": "Advanced",
-    "duration_weeks": 12,
-    "equipment": "Barbell + Rack",
-    "goal": "Hypertrophy",
-    "sessions_per_week": 5,
-    "category": "Strength",
-    "calories_per_session": 420,
-    "tags": [
-      "powerlifting",
-      "bulk"
-    ],
-    "featured": true
+    id: 3,
+    img: "./home-page/featured/muscle-gain.png",
+    title: "Muscle Gain Plan",
+    tag: "Build Strength & Size",
+    workouts_per_week: "4-5",
+    minutes_per_day: "45-60",
+    focus: "Strength Training Focus",
   },
   {
-    "id": 4,
-    "title": "Home Workout",
-    "img": "./home-images/features/workout-4.png",
-    "level": "All Levels",
-    "duration_weeks": null,
-    "equipment": "No Equipment",
-    "goal": "Stay active",
-    "sessions_per_week": 4,
-    "category": "Bodyweight",
-    "calories_per_session": 300,
-    "tags": [
-      "home",
-      "no-gym"
+    id: 4,
+    img: "./home-page/featured/home-workout.png",
+    title: "Home Workout",
+    tag: "No Equipment Needed",
+    workouts_per_week: "3-4",
+    minutes_per_day: "20-40",
+    focus: "Bodyweight Focus",
+  },
+];
+
+[
+  {
+    id: 1,
+    user: {
+      name: "Olivia Martinez",
+      avatar: "https://i.pravatar.cc/150?img=1",
+    },
+    created_at: "2024-01-15T09:30:00Z",
+    time_ago: "1 hr",
+    has_video: true,
+    routine_name: "Olivia's Morning Routine",
+    category: "Beginner Workout",
+    exercises: [
+      { name: "Goblet Squats", sets: 3, reps: 12, unit: "Reps" },
+      { name: "Push-Ups", sets: 3, reps: 10, unit: "Reps" },
+      { name: "Plank", sets: 3, reps: 30, unit: "Secs" },
     ],
-    "featured": true
+    likes: 41,
+    comments: 9,
+    action_label: "Try This Routine",
   },
   {
-    "id": 5,
-    "title": "Cardio Blast",
-    "img": "./home-images/features/workout-5.png",
-    "level": "Intermediate",
-    "duration_weeks": 6,
-    "equipment": "Treadmill",
-    "goal": "Improve endurance",
-    "sessions_per_week": 4,
-    "category": "Cardio",
-    "calories_per_session": 550,
-    "tags": [
-      "running",
-      "stamina"
+    id: 2,
+    user: {
+      name: "Muscle Gain",
+      avatar: "https://i.pravatar.cc/150?img=2",
+    },
+    created_at: "2024-01-13T14:00:00Z",
+    time_ago: "2 days ago",
+    has_video: true,
+    routine_name: "Muscle Gain · Strength",
+    category: "Muscle Gain",
+    exercises: [
+      { name: "Bench Press", sets: 4, reps: 8, unit: "Reps" },
+      { name: "Pull-Ups", sets: 3, reps: 8, unit: "Reps" },
+      { name: "Bicep Curls", sets: 3, reps: 10, unit: "Reps" },
     ],
-    "featured": false
+    likes: 68,
+    comments: 14,
+    action_label: "View Plan",
   },
   {
-    "id": 6,
-    "title": "Yoga & Flexibility",
-    "img": "./home-images/features/workout-6.png",
-    "level": "Beginner",
-    "duration_weeks": 8,
-    "equipment": "Yoga Mat",
-    "goal": "Improve mobility",
-    "sessions_per_week": 3,
-    "category": "Flexibility",
-    "calories_per_session": 180,
-    "tags": [
-      "yoga",
-      "stretching"
+    id: 3,
+    user: {
+      name: "Jake Thompson",
+      avatar: "https://i.pravatar.cc/150?img=3",
+    },
+    created_at: "2024-01-15T07:00:00Z",
+    time_ago: "3 hrs",
+    has_video: false,
+    routine_name: "Jake's HIIT Blast",
+    category: "Cardio",
+    exercises: [
+      { name: "Burpees", sets: 4, reps: 15, unit: "Reps" },
+      { name: "Jump Rope", sets: 3, reps: 60, unit: "Secs" },
+      { name: "Mountain Climbers", sets: 3, reps: 20, unit: "Reps" },
     ],
-    "featured": true
+    likes: 32,
+    comments: 5,
+    action_label: "Try This Routine",
   },
   {
-    "id": 7,
-    "title": "Core Crusher",
-    "img": "./home-images/features/workout-7.png",
-    "level": "Intermediate",
-    "duration_weeks": 4,
-    "equipment": "Mat + Resistance Band",
-    "goal": "Strengthen core",
-    "sessions_per_week": 5,
-    "category": "Core",
-    "calories_per_session": 320,
-    "tags": [
-      "abs",
-      "core",
-      "functional"
+    id: 4,
+    user: {
+      name: "Sara Lee",
+      avatar: "https://i.pravatar.cc/150?img=4",
+    },
+    created_at: "2024-01-14T18:45:00Z",
+    time_ago: "20 hrs",
+    has_video: true,
+    routine_name: "Sara's Yoga Flow",
+    category: "Flexibility",
+    exercises: [
+      { name: "Downward Dog", sets: 3, reps: 45, unit: "Secs" },
+      { name: "Warrior II", sets: 2, reps: 60, unit: "Secs" },
+      { name: "Child's Pose", sets: 3, reps: 30, unit: "Secs" },
     ],
-    "featured": false
+    likes: 55,
+    comments: 11,
+    action_label: "View Plan",
   },
   {
-    "id": 8,
-    "title": "Athletic Performance",
-    "img": "./home-images/features/workout-8.png",
-    "level": "Advanced",
-    "duration_weeks": 10,
-    "equipment": "Full Gym",
-    "goal": "Peak performance",
-    "sessions_per_week": 6,
-    "category": "Sport-Specific",
-    "calories_per_session": 600,
-    "tags": [
-      "speed",
-      "agility",
-      "power"
+    id: 5,
+    user: {
+      name: "Marcus Reid",
+      avatar: "https://i.pravatar.cc/150?img=5",
+    },
+    created_at: "2024-01-12T10:00:00Z",
+    time_ago: "3 days ago",
+    has_video: false,
+    routine_name: "Marcus's Power Lift",
+    category: "Strength · Advanced",
+    exercises: [
+      { name: "Deadlifts", sets: 5, reps: 5, unit: "Reps" },
+      { name: "Squats", sets: 4, reps: 6, unit: "Reps" },
+      { name: "Overhead Press", sets: 3, reps: 8, unit: "Reps" },
     ],
-    "featured": true
+    likes: 89,
+    comments: 22,
+    action_label: "Try This Routine",
   },
   {
-    "id": 9,
-    "title": "Post-Natal Recovery",
-    "img": "./home-images/features/workout-9.png",
-    "level": "Beginner",
-    "duration_weeks": 12,
-    "equipment": "Light Dumbbells",
-    "goal": "Gentle recovery",
-    "sessions_per_week": 3,
-    "category": "Rehabilitation",
-    "calories_per_session": 200,
-    "tags": [
-      "recovery",
-      "postnatal",
-      "low-impact"
+    id: 6,
+    user: {
+      name: "Priya Sharma",
+      avatar: "https://i.pravatar.cc/150?img=6",
+    },
+    created_at: "2024-01-15T06:15:00Z",
+    time_ago: "4 hrs",
+    has_video: true,
+    routine_name: "Priya's Core Crusher",
+    category: "Core · Intermediate",
+    exercises: [
+      { name: "Crunches", sets: 3, reps: 20, unit: "Reps" },
+      { name: "Leg Raises", sets: 3, reps: 15, unit: "Reps" },
+      { name: "Russian Twists", sets: 3, reps: 20, unit: "Reps" },
     ],
-    "featured": false
+    likes: 47,
+    comments: 8,
+    action_label: "View Plan",
   },
   {
-    "id": 10,
-    "title": "Senior Fitness",
-    "img": "./home-images/features/workout-10.png",
-    "level": "All Levels",
-    "duration_weeks": null,
-    "equipment": "Chair + Light Weights",
-    "goal": "Maintain health",
-    "sessions_per_week": 3,
-    "category": "Low Impact",
-    "calories_per_session": 150,
-    "tags": [
-      "seniors",
-      "joint-friendly",
-      "balance"
+    id: 7,
+    user: {
+      name: "Tom Walker",
+      avatar: "https://i.pravatar.cc/150?img=7",
+    },
+    created_at: "2024-01-11T16:00:00Z",
+    time_ago: "4 days ago",
+    has_video: false,
+    routine_name: "Tom's Fat Burn",
+    category: "Weight Loss · Beginner",
+    exercises: [
+      { name: "Jumping Jacks", sets: 3, reps: 30, unit: "Reps" },
+      { name: "High Knees", sets: 3, reps: 40, unit: "Secs" },
+      { name: "Box Steps", sets: 4, reps: 12, unit: "Reps" },
     ],
-    "featured": true
-  }
+    likes: 23,
+    comments: 3,
+    action_label: "Try This Routine",
+  },
+  {
+    id: 8,
+    user: {
+      name: "Aisha Johnson",
+      avatar: "https://i.pravatar.cc/150?img=8",
+    },
+    created_at: "2024-01-15T05:00:00Z",
+    time_ago: "5 hrs",
+    has_video: true,
+    routine_name: "Aisha's Full Body Burn",
+    category: "Full Body · Intermediate",
+    exercises: [
+      { name: "Lunges", sets: 3, reps: 12, unit: "Reps" },
+      { name: "Dumbbell Rows", sets: 3, reps: 10, unit: "Reps" },
+      { name: "Tricep Dips", sets: 3, reps: 15, unit: "Reps" },
+    ],
+    likes: 61,
+    comments: 17,
+    action_label: "View Plan",
+  },
 ];
