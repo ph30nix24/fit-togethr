@@ -60,12 +60,12 @@ export const workouts = [
   },
 ];
 
-[
+export const routines = [
   {
     id: 1,
     user: {
       name: "Olivia Martinez",
-      avatar: "https://i.pravatar.cc/150?img=1",
+      avatar: "https://i.pravatar.cc/150?img=16",
     },
     created_at: "2024-01-15T09:30:00Z",
     time_ago: "1 hr",
@@ -85,7 +85,7 @@ export const workouts = [
     id: 2,
     user: {
       name: "Muscle Gain",
-      avatar: "https://i.pravatar.cc/150?img=2",
+      avatar: "https://i.pravatar.cc/150?img=52",
     },
     created_at: "2024-01-13T14:00:00Z",
     time_ago: "2 days ago",
@@ -125,7 +125,7 @@ export const workouts = [
     id: 4,
     user: {
       name: "Sara Lee",
-      avatar: "https://i.pravatar.cc/150?img=4",
+      avatar: "https://i.pravatar.cc/150?img=5",
     },
     created_at: "2024-01-14T18:45:00Z",
     time_ago: "20 hrs",
@@ -145,7 +145,7 @@ export const workouts = [
     id: 5,
     user: {
       name: "Marcus Reid",
-      avatar: "https://i.pravatar.cc/150?img=5",
+      avatar: "https://i.pravatar.cc/150?img=13",
     },
     created_at: "2024-01-12T10:00:00Z",
     time_ago: "3 days ago",
@@ -165,7 +165,7 @@ export const workouts = [
     id: 6,
     user: {
       name: "Priya Sharma",
-      avatar: "https://i.pravatar.cc/150?img=6",
+      avatar: "https://i.pravatar.cc/150?img=48",
     },
     created_at: "2024-01-15T06:15:00Z",
     time_ago: "4 hrs",
@@ -181,44 +181,44 @@ export const workouts = [
     comments: 8,
     action_label: "View Plan",
   },
-  {
-    id: 7,
-    user: {
-      name: "Tom Walker",
-      avatar: "https://i.pravatar.cc/150?img=7",
-    },
-    created_at: "2024-01-11T16:00:00Z",
-    time_ago: "4 days ago",
-    has_video: false,
-    routine_name: "Tom's Fat Burn",
-    category: "Weight Loss · Beginner",
-    exercises: [
-      { name: "Jumping Jacks", sets: 3, reps: 30, unit: "Reps" },
-      { name: "High Knees", sets: 3, reps: 40, unit: "Secs" },
-      { name: "Box Steps", sets: 4, reps: 12, unit: "Reps" },
-    ],
-    likes: 23,
-    comments: 3,
-    action_label: "Try This Routine",
-  },
-  {
-    id: 8,
-    user: {
-      name: "Aisha Johnson",
-      avatar: "https://i.pravatar.cc/150?img=8",
-    },
-    created_at: "2024-01-15T05:00:00Z",
-    time_ago: "5 hrs",
-    has_video: true,
-    routine_name: "Aisha's Full Body Burn",
-    category: "Full Body · Intermediate",
-    exercises: [
-      { name: "Lunges", sets: 3, reps: 12, unit: "Reps" },
-      { name: "Dumbbell Rows", sets: 3, reps: 10, unit: "Reps" },
-      { name: "Tricep Dips", sets: 3, reps: 15, unit: "Reps" },
-    ],
-    likes: 61,
-    comments: 17,
-    action_label: "View Plan",
-  },
+  // {
+  //   id: 7,
+  //   user: {
+  //     name: "Tom Walker",
+  //     avatar: "https://i.pravatar.cc/150?img=54",
+  //   },
+  //   created_at: "2024-01-11T16:00:00Z",
+  //   time_ago: "4 days ago",
+  //   has_video: false,
+  //   routine_name: "Tom's Fat Burn",
+  //   category: "Weight Loss · Beginner",
+  //   exercises: [
+  //     { name: "Jumping Jacks", sets: 3, reps: 30, unit: "Reps" },
+  //     { name: "High Knees", sets: 3, reps: 40, unit: "Secs" },
+  //     { name: "Box Steps", sets: 4, reps: 12, unit: "Reps" },
+  //   ],
+  //   likes: 23,
+  //   comments: 3,
+  //   action_label: "Try This Routine",
+  // },
+  // {
+  //   id: 8,
+  //   user: {
+  //     name: "Aisha Johnson",
+  //     avatar: "https://i.pravatar.cc/150?img=19",
+  //   },
+  //   created_at: "2024-01-15T05:00:00Z",
+  //   time_ago: "5 hrs",
+  //   has_video: true,
+  //   routine_name: "Aisha's Full Body Burn",
+  //   category: "Full Body · Intermediate",
+  //   exercises: [
+  //     { name: "Lunges", sets: 3, reps: 12, unit: "Reps" },
+  //     { name: "Dumbbell Rows", sets: 3, reps: 10, unit: "Reps" },
+  //     { name: "Tricep Dips", sets: 3, reps: 15, unit: "Reps" },
+  //   ],
+  //   likes: 61,
+  //   comments: 17,
+  //   action_label: "View Plan",
+  // },
 ];

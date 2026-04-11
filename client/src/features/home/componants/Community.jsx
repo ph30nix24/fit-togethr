@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { IoFitnessOutline } from "react-icons/io5";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { FaChevronDown } from "react-icons/fa";
-
+import { routines } from "../../../utils";
 const Community = () => {
   return (
     <section className="w-full h-[110vh] relative z-1 px-5 lg:px-40 lg:py-10 bg-linear-to-tr to-[#FBF5F1] from-[#f89d6f]/30  overflow-hidden">
@@ -64,23 +64,54 @@ const Community = () => {
               +100 Members
             </div>
           </div>
-          <div className="w-full h-6/10 rounded-3xl shadow-xl shadow-primary/20 bg-white/80 mt-18 px-5 py-2">
+          <div className="w-full h-6/10 rounded-3xl shadow-xl shadow-primary/20 bg-white/50 mt-18 px-5 py-2">
             <div className="w-full flex gap-3 items-center justify-between h-[6%]">
-              <h1 className="text-lg font-medium font-secondary">Your Fitness Feed</h1>
+              <h1 className="text-lg font-medium font-secondary">
+                Your Fitness Feed
+              </h1>
               <div className="flex border border-gray-300 rounded-full px-2 w-fit justify-between">
                 <p className="communityTags">Top</p>
                 <p className="communityTags border-l border-gray-300">Latest</p>
-                <p className="communityTags border-l border-gray-300 ">Following</p>
+                <p className="communityTags border-l border-gray-300 ">
+                  Following
+                </p>
               </div>
               <div className="flex border border-gray-300 rounded-full px-2 w-fit justify-between">
                 <p className="communityTags">All Time</p>
-                <p className="communityTags border-l border-gray-300">This Month</p>
-                <p className="communityTags border-l border-gray-300 center text-xs!"><FaChevronDown /></p>
+                <p className="communityTags border-l border-gray-300">
+                  This Month
+                </p>
+                <p className="communityTags border-l border-gray-300 center text-xs!">
+                  <FaChevronDown />
+                </p>
               </div>
             </div>
-            <div className="w-full h-[94%] flex flex-wrap gap-3">
-              <div className="w-1/4 h-1/2">
-              </div>
+            <div className="w-full h-[94%] flex flex-wrap gap-3 py-3 justify-center">
+              {routines.map((routine) => (
+                <div
+                  key={routine.id}
+                  className="w-[32%] h-[48%] shrink-0 border border-gray-300 rounded-lg p-2"
+                >
+                  <div className="flex justify-between gap-2">
+                    <img
+                      src={routine.user.avatar}
+                      alt={routine.user.name}
+                      className="w-10 h-10 rounded-full"
+                    />
+                    <div className="w-full">
+                      <div className="flex items-center justify-between ">
+                        <h1 className="text-sm font-body">
+                          {routine.user.name}
+                        </h1>
+                        <p className="text-xs text-gray-500 font-medium font-body self-start">
+                          &#8226; {routine.time_ago}
+                        </p>
+                      </div>
+                      <div className="text-xs font-body font">{routine.routine_name}</div>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
